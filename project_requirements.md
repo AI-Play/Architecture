@@ -33,7 +33,7 @@ Frontend, Backend 등 각 파트별로 충족시켜야 할 조건 목록
 - (Cloud인 경우) 사용량 초과만 안 한다면 장기간(1년 이상) 사용해도 비용 발생하지 않아야 함
 - DB Structure
   - 사용자(user) - SQL :
-    - 고유 번호(idx) int(auto increment)
+    - 고유 번호(idx) int(auto increment) **PK**
     - 이메일(email) string
     - 비밀번호(pw) string(hashed)
     - 닉네임(nickname) string
@@ -42,16 +42,16 @@ Frontend, Backend 등 각 파트별로 충족시켜야 할 조건 목록
     - 가입 시점(created_at) datetime (auto)
 
   - 사용자 서비스 이용 시간 + 기능별 사용 횟수 체크(func_log) - SQL :
-    - 사용자 고유 번호(user_idx) int(auto increment)
-    - 기능 고유값(func_code) **int or string** (논의 필요)
+    - 사용자 고유 번호(user_idx) int(auto increment) **FK**
+    - 기능 고유값(func_code) **int or string (논의 필요)**
     - 정상 작동 여부(is_worked) boolean(0 | 1)
     - 작동 시작 시각(start_time) datetime
     - 작동 종료 시각(end_time) datetime
     - 생성 시점(created_at) datetime (auto)
 
   - ML 프로젝트 정보(ml_project) - SQL :
-    - 고유 번호(idx) int
-    - 사용자 고유 번호(user_idx) int
+    - 고유 번호(idx) int **PK**
+    - 사용자 고유 번호(user_idx) int **FK**
     - 프로젝트명(proj_name) string
     - 최종 수정 시점(last_update) datetime
     - 생성 시점(created_at) datetime (auto)
@@ -80,7 +80,7 @@ Frontend, Backend 등 각 파트별로 충족시켜야 할 조건 목록
       - { 모델 파일명 : 모델 파일 S3 주소}, ... ]
     - }
 
-  - 채팅 메시지 기록(chat_log) - **SQL or NoSQL** (논의 필요) :
+  - 채팅 메시지 기록(chat_log) - **SQL or NoSQL (논의 필요)** :
     - 사용자 번호(user_idx) int
     - 닉네임(user_nick) string
     - 채팅 내용(content) string
