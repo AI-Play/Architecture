@@ -1,0 +1,91 @@
+name: bug_report
+description: 버그 발생 시 기록을 위한 템플릿
+title: "[BUG] 이슈제목"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **※ 다른 멤버의 작업이 필요한 경우 우측의 Assignees에 해당 멤버를 꼭 지정해주세요!**
+        **※ 스스로 해결하신 경우, 본 이슈의 코멘트에 해결 방법 및 절차를 남겨주세요!**
+
+  - type: input
+    id: writer
+    attributes:
+      label: 작성자
+      description: 작성하신 분 이름과 Github ID를 적어주세요(신속한 작성자 구분 목적)
+      placeholder: ex. 안경호 seahahn
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_content
+    attributes:
+      label: 1. 버그 내용
+      description: 어디서 어떤 버그가 어떻게 발생했는지 알려주세요.
+      placeholder: 버그 확인 절차도 남겨주시면 좋습니다. 아래는 예시입니다.
+                    1. Go to '...'
+                    2. Click on '....'
+                    3. Scroll down to '....'
+                    4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expectation
+    attributes:
+      label: 2. 기대 사항
+      description: 버그가 고쳐진 후 무엇이 어떻게 동작하길 기대하시는지 알려주세요.
+      placeholder: ex. 데이터 업로드를 하면 데이터프레임으로 바뀌는 과정이 정상 작동하는 것
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 3. 개발 환경
+        어떤 환경에서 버그가 발생했는지 알려주세요.
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 3-1. 운영체제
+      description: 사용하시는 운영체제를 선택해주세요.
+      options:
+        - 윈도우 10
+        - Mac OS
+        - Linux
+        - 그 외
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ide
+    attributes:
+      label: 3-2. 개발 도구
+      description: 사용하시는 개발 도구를 선택해주세요.
+      options:
+        - VSCode
+        - PyCharm
+        - IntelliJ
+        - 그 외
+
+  - type: dropdown
+    id: env
+    attributes:
+      label: 3-3. 작업하신 개발 환경을 알려주세요. (다중 선택 가능)
+      multiple: true
+      options:
+        - localhost
+        - 가상 환경 (Docker Container 등)
+        - Cloud (AWS 등)
+        - 그 외
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 4. 추가 내용
+      description: 위 사항들 외 별도로 남기실 내용을 작성해주세요.
+        (텍스트 외 스크린샷 등의 이미지 첨부 가능)
+    validations:
+      required: false
