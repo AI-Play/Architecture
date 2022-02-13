@@ -1,7 +1,7 @@
 name: bug_report
 description: 버그 발생 시 기록을 위한 템플릿
 title: "[BUG] 이슈제목"
-labels: ["bug"]
+labels: ["분류: 버그"]
 body:
   - type: markdown
     attributes:
@@ -13,8 +13,8 @@ body:
     id: writer
     attributes:
       label: 작성자
-      description: 작성하신 분 이름과 Github ID를 적어주세요(신속한 작성자 구분 목적)
-      placeholder: ex. 안경호 seahahn
+      description: 작성하신 분 이름을 적어주세요(신속한 작성자 구분 목적)
+      placeholder: ex. 안경호
     validations:
       required: true
 

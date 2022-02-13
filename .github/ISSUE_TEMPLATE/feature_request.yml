@@ -1,7 +1,7 @@
 name: feature_request
 description: 기능 추가 또는 요청을 위한 템플릿
 title: "[FeatureReq] 이슈제목"
-labels: ["documentation", "enhancement", "help wanted"]
+labels: ["분류: 기능 추가 요청", "상태: 도움 필요"]
 assignees: 
   - seahahn
 body:
@@ -16,8 +16,8 @@ body:
     id: writer
     attributes:
       label: 작성자
-      description: 작성하신 분 이름과 Github ID를 적어주세요(신속한 작성자 구분 목적)
-      placeholder: ex. 안경호 seahahn
+      description: 작성하신 분 이름을 적어주세요(신속한 작성자 구분 목적)
+      placeholder: ex. 안경호
     validations:
       required: true
 
