@@ -9,6 +9,13 @@ body:
         **※ 다른 멤버의 작업이 필요한 경우 우측의 Assignees에 해당 멤버를 꼭 지정해주세요!**
         **※ 스스로 해결하신 경우, 본 이슈의 코멘트에 해결 방법 및 절차를 남겨주세요!**
 
+  - type: markdown
+    attributes:
+      value: |
+        **※ 우측 Projects 지정 필요 : **
+        - **Repository : 해당 Repo의 Project Board**
+        - **Organization : Phase 1(MLML) Progress Board, WebApp Board**
+
   - type: input
     id: writer
     attributes:

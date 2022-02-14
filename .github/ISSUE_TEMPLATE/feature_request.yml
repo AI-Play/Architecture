@@ -11,7 +11,12 @@ body:
         **※ Architecture repo 및 Project board에 기록되어 있는 기능 목록 외의 기능을 추가 또는 요청하기 위한 템플릿입니다.**
         **※ 본인이 직접 기능 추가를 원하신다면 자기 자신을, 다른 멤버에게 요청하고 싶다면 해당 멤버를 Assignees에 꼭 지정해주세요.**
         **※ 안경호(seahahn)는 Assignees에 기본 지정되어 있습니다. 해제하지 말아주세요!**
-
+  - type: markdown
+    attributes:
+      value: |
+        **※ 우측 Projects 지정 필요 : **
+        - **Repository : 해당 Repo의 Project Board**
+        - **Organization : Phase 1(MLML) Progress Board, WebApp Board**
   - type: input
     id: writer
     attributes:
