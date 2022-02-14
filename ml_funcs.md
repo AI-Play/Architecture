@@ -1,8 +1,6 @@
 # Machine Learning Functions
 
 **!!! 머신 러닝 기능은 최종적으로 AWS Lambda(or else)를 이용해 Serverless로 제공하는 것이 목표 !!!**
-**!!! 머신 러닝 기능은 최종적으로 AWS Lambda(or else)를 이용해 Serverless로 제공하는 것이 목표 !!!**
-**!!! 머신 러닝 기능은 최종적으로 AWS Lambda(or else)를 이용해 Serverless로 제공하는 것이 목표 !!!**
 
 ## Project Phase 1(MLML)에서 구현할 머신 러닝 관련 기능 목록
 
@@ -15,13 +13,13 @@ ex. ml - 1 - 행 열 자리 바꾸기(transpose)
 ※ 기능 구현의 난이도 혹은 비용이 높은 경우 Phase 2(AI Play)에서 구현하기
 
 ### 1. EDA (데이터 탐색)
-- 데이터셋 업로드(csv, xlsx, ...)
-- 데이터프레임 만들기(read_csv, ...)
-- 데이터 조회(head, tail, ...)
-- 형태 확인(shape)
+- 데이터셋 업로드(csv, xlsx, ...) **-> maybe in Frontend**
+- 데이터프레임 만들기(read_csv, ...) **-> maybe in Frontend**
+- 데이터 조회(head, tail, ...) **-> maybe in Frontend**
+- 형태 확인(shape) **-> maybe in Frontend**
 - 데이터 타입 확인(dtypes)
-- 데이터 분포 확인(describe)
-- 컬럼 목록 조회(df.columns)
+- 데이터 분포 확인(describe) **-> maybe in Frontend**
+- 컬럼 목록 조회(columns)
 - 컬럼 내 고유값 조회(unique)
 - 결측치 확인(isna)
 - 이상치 확인
