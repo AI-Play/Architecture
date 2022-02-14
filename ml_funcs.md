@@ -23,7 +23,7 @@ ex. ml - 1 - 행 열 자리 바꾸기(transpose)
 - 컬럼 내 고유값 조회(unique)
 - 결측치 확인(isna)
 - 이상치 확인
-- 상관 관계 확인(df.corr())
+- 상관 관계 확인(corr())
 - 데이터 그룹핑(groupby)
 - 행 열 자리 바꾸기(transpose)
 

@@ -87,57 +87,57 @@
   - 3-5. barplot
   - etc.
 
+- **4. Data Prepareation(학습 데이터 준비)**
+  - 4-1. 특성 / 타겟 분리하기
+  - 4-2. _훈련 / 검증 / 테스트 데이터셋 나누기(train_test_split, 시계열) - 구현 방안 논의 필요_
+  - 4-3. _Encoder : One-hot, Target, Ordinal, ... - 구현 방안 논의 필요_
+  - 4-4. _타겟 클래스 비중 계산(class weight) - 구현 방안 논의 필요_
+  - etc.
+
 #### 2. ML Training 기능 API 서버 구축
 **※ 아래의 "3. ML 기능 작동 로그 DB(func_log)에 저장" 고려하여 구현하기**
 
-- **1. Data Prepareation(학습 데이터 준비)**
-  - 1-1. 특성 / 타겟 분리하기
-  - 1-2. _훈련 / 검증 / 테스트 데이터셋 나누기(train_test_split, 시계열) - 구현 방안 논의 필요_
-  - 1-3. _Encoder : One-hot, Target, Ordinal, ... - 구현 방안 논의 필요_
-  - 1-4. _타겟 클래스 비중 계산(class weight) - 구현 방안 논의 필요_
-  - etc.
-
-- **2. Model Training(모델 학습)**
-  - 2-1. Regression Model(회귀)
-    - 2-1-1. Linear
-    - 2-1-2. Ridge
-    - 2-1-3. Decision Tree
-    - 2-1-4. Random Forest
-    - 2-1-5. Boosting
+- **1. Model Training(모델 학습)**
+  - 1-1. Regression Model(회귀)
+    - 1-1-1. Linear
+    - 1-1-2. Ridge
+    - 1-1-3. Decision Tree
+    - 1-1-4. Random Forest
+    - 1-1-5. Boosting
     - etc.
-  - 2-2. Classification Model(분류)
-    - 2-2-1. Logistic
-    - 2-2-2. Decision Tree
-    - 2-2-3. Random Forest
-    - 2-2-4. Boosting
+  - 1-2. Classification Model(분류)
+    - 1-2-1. Logistic
+    - 1-2-2. Decision Tree
+    - 1-2-3. Random Forest
+    - 1-2-4. Boosting
     - etc.
-  - 2-3. Model Hyper-parameter Tuning(모델 튜닝)
-    - 2-3-1. Grid
-    - 2-3-2. Randomized
+  - 1-3. Model Hyper-parameter Tuning(모델 튜닝)
+    - 1-3-1. Grid
+    - 1-3-2. Randomized
     - etc.
 
-- **3. Model Evaluation(모델 평가)**
-  - 3-1. Regression(회귀)
-    - 3-1-1. Accuracy
-    - 3-1-2. Mean Squared Error(MSE)
-    - 3-1-3. Mean Absolute Error(MAE)
-    - 3-1-4. R-Squared
+- **2. Model Evaluation(모델 평가)**
+  - 2-1. Regression(회귀)
+    - 2-1-1. Accuracy
+    - 2-1-2. Mean Squared Error(MSE)
+    - 2-1-3. Mean Absolute Error(MAE)
+    - 2-1-4. R-Squared
     - etc.
-  - 3-2. Classification(분류)
-    - 3-2-1. Accuracy
-    - 3-2-2. Precision
-    - 3-2-3. Recall
-    - 3-2-4. F1 Score
-    - 3-2-5. Confusion Matrix
-    - 3-2-6. AUC Score
-    - 3-2-7. ROC Curve
+  - 2-2. Classification(분류)
+    - 2-2-1. Accuracy
+    - 2-2-2. Precision
+    - 2-2-3. Recall
+    - 2-2-4. F1 Score
+    - 2-2-5. Confusion Matrix
+    - 2-2-6. AUC Score
+    - 2-2-7. ROC Curve
     - etc.
 
-- **4. Model Interpretation(모델 해석)**
-  - Feature Importance(특성 중요도)
-  - Permutation Importance(순열 중요도)
-  - Partial Dependence Plot(PDP)
-  - SHapley Additive exPlanations(SHAP)
+- **3. Model Interpretation(모델 해석)**
+  - 3-1. Feature Importance(특성 중요도)
+  - 3-2. Permutation Importance(순열 중요도)
+  - 3-3. Partial Dependence Plot(PDP)
+  - 3-4. SHapley Additive exPlanations(SHAP)
   - etc.
 
 - **5. Model Saving & Loading (모델 저장 및 불러오기)**
