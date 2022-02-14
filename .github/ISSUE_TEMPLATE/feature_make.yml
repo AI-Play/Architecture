@@ -12,7 +12,12 @@ body:
         **※ 기능 구현 완료 후 Pull Request 작성 시 해당 이슈를 꼭 연결해주세요!**
         **※ 이슈 내용에 변경이 필요한 경우(기능 세부 사항 등), 아래 Comment를 남겨주시고 Label에는 '상태: 재검토 필요'를 지정해주세요!**
         **※ 이슈 내용에 추가 정보가 필요한 경우(기능 세부 사항 등), 아래 Comment를 남겨주시고 Label에는 '상태: 추가 정보 필요'를 지정해주세요!**
-
+  - type: markdown
+    attributes:
+      value: |
+        **※ 우측 Projects 지정 필요 : **
+        - **Repository : 해당 Repo의 Project Board**
+        - **Organization : Phase 1(MLML) Progress Board, WebApp Board**
 
   - type: input
     id: writer
