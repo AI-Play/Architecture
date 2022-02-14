@@ -87,7 +87,7 @@
   - 3-5. barplot
   - etc.
 
-- **4. Data Prepareation(학습 데이터 준비)**
+- **4. Data Preparation(학습 데이터 준비)**
   - 4-1. 특성 / 타겟 분리하기
   - 4-2. _훈련 / 검증 / 테스트 데이터셋 나누기(train_test_split, 시계열) - 구현 방안 논의 필요_
   - 4-3. _Encoder : One-hot, Target, Ordinal, ... - 구현 방안 논의 필요_
