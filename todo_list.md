@@ -65,7 +65,6 @@
   - 1-10. _데이터 이상치 확인 - 구현 방안 논의 필요_
   - 1-11. 데이터 상관 관계 확인(corr())
   - 1-12. 데이터 그룹핑(groupby)
-  - 1-13. 행 열 자리 바꾸기(transpose)
   - etc.
 
 - **2. Feature Engineering (특성 공학)**
@@ -77,6 +76,7 @@
   - 2-6. 컬럼명 변경(rename, ...)
   - 2-7. 데이터프레임 정렬(sort_values)
   - 2-8. 데이터프레임 합치기(concat, merge, ...)
+  - 2-9. 행 열 자리 바꾸기(transpose)
   - etc.
 
 - **3. Visualization (시각화)**
@@ -91,6 +91,7 @@
   - 4-1. 특성 / 타겟 분리하기
   - 4-2. _훈련 / 검증 / 테스트 데이터셋 나누기(train_test_split, 시계열) - 구현 방안 논의 필요_
   - 4-3. _Encoder : One-hot, Target, Ordinal, ... - 구현 방안 논의 필요_
+  - 4-3. _Scaler : Standard, MinMax, ... - 구현 방안 논의 필요_
   - 4-4. _타겟 클래스 비중 계산(class weight) - 구현 방안 논의 필요_
   - etc.
 
@@ -140,7 +141,7 @@
   - 3-4. SHapley Additive exPlanations(SHAP)
   - etc.
 
-- **5. Model Saving & Loading (모델 저장 및 불러오기)**
+- **4. Model Saving & Loading (모델 저장 및 불러오기)**
   - Model Save(모델 저장)
   - Model Load(모델 불러오기)
 
