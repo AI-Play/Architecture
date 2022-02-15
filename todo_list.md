@@ -119,10 +119,9 @@
 
 - **2. Model Evaluation(모델 평가)**
   - 2-1. Regression(회귀)
-    - 2-1-1. Accuracy
-    - 2-1-2. Mean Squared Error(MSE)
-    - 2-1-3. Mean Absolute Error(MAE)
-    - 2-1-4. R-Squared
+    - 2-1-1. Mean Squared Error(MSE)
+    - 2-1-2. Mean Absolute Error(MAE)
+    - 2-1-3. R-Squared
     - etc.
   - 2-2. Classification(분류)
     - 2-2-1. Accuracy
