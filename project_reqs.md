@@ -57,10 +57,12 @@ Frontend, Backend 등 각 파트별로 충족시켜야 할 조건 목록
     - 생성 시점(created_at) datetime (auto)
 
   - ML 프로젝트 구조(ml_proj_structure) - NoSQL :
-    - 사용자 번호(user_idx)
-      - 프로젝트 번호(proj_idx)
-        - 데이터 준비(EDA, 전처리) 파트(preparing)
-          - 기능명
+    - 사용자 번호(user_idx) : int
+    - 프로젝트 번호(proj_idx) : int
+    - 작업 블록(blocks) :
+      - 작업 블록 번호 - int :
+        - 데이터 준비(EDA, 전처리) 파트(preparing) :
+          - 기능명 :
             - 기능 항목 : 항목 값
             - 기능 항목 : 항목 값
             - ...
@@ -69,22 +71,27 @@ Frontend, Backend 등 각 파트별로 충족시켜야 할 조건 목록
             - 기능 항목 : 항목 값
             - ...
           - ...
-        - 모델 제작 파트(training)
-          - 기능명
+        - 모델 제작 파트(training) :
+          - 기능명 :
             - 기능 항목 : 항목 값
             - 기능 항목 : 항목 값
             - ...
-          - 기능명
+          - 기능명 :
             - 기능 항목 : 항목 값
             - 기능 항목 : 항목 값
             - ...
           - ...
+        - 모델 정보(model_info) :
+          - 모델 파일명(model_name) : string
+          - 모델 파일 S3 주소(model_path) : string
+          - 모델 크기(model_size) : int
+      - ...
 
-  - ML 모델 저장 경로(ml_model_path) - NoSQL :
+  <!-- - ML 모델 저장 경로(ml_model_path) - NoSQL :
     - 프로젝트 번호
       - 모델 파일명 : 모델 파일 S3 주소
       - 모델 파일명 : 모델 파일 S3 주소
-      - ...
+      - ... -->
 
   - 채팅 메시지 기록(chat_log) - **SQL or NoSQL (논의 필요)** :
     - 사용자 번호(user_idx) int
