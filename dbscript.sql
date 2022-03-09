@@ -12,7 +12,8 @@ CREATE TABLE users(
 	email VARCHAR(255) NOT NULL,
 	pw VARCHAR(255) NOT NULL, -- 패스워드
 	nickname VARCHAR(255) NOT NULL,
-	membership INTEGER NOT NULL, -- 멤버쉽 구분(티어1, 티어2 등)
+	profile_pic VARCHAR(255) NOT NULL -- 프로필 사진 S3 URL
+	membership INTEGER NOT NULL DEFAULT 0, -- 멤버쉽 구분(티어1, 티어2 등)
 	last_update TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 마지막 접속 시점
 	created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 가입 시점
 	CONSTRAINT users_pk PRIMARY KEY (idx)
@@ -23,6 +24,7 @@ COMMENT ON TABLE users IS '사용자 정보';
 
 COMMENT ON COLUMN users.idx IS '사용자 고유 번호';
 COMMENT ON COLUMN users.pw IS '패스워드';
+COMMENT ON COLUMN users.profile_pic IS '프로필 사진 S3 URL';
 COMMENT ON COLUMN users.membership IS '멤버쉽 구분(티어1, 티어2 등)';
 COMMENT ON COLUMN users.last_update IS '마지막 접속 시점';
 COMMENT ON COLUMN users.created_at IS '가입 시점';
@@ -118,3 +120,31 @@ COMMENT ON COLUMN ml_model.created_time IS '생성 시점';
 -- ml_model foreign keys
 
 ALTER TABLE ml_model ADD CONSTRAINT ml_model_fk FOREIGN KEY (user_idx) REFERENCES users(idx);
+
+
+
+-- users_inactive definition
+
+-- DROP TABLE users_inactive;
+
+CREATE TABLE users_inactive(
+	idx SERIAL NOT NULL, -- 사용자 고유 번호
+	email VARCHAR(255) NOT NULL,
+	pw VARCHAR(255) NOT NULL, -- 패스워드
+	nickname VARCHAR(255) NOT NULL,
+	membership INTEGER NOT NULL DEFAULT 0, -- 멤버쉽 구분(티어1, 티어2 등)
+	last_update TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 마지막 접속 시점
+	created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 가입 시점
+	user_state INTEGER NOT NULL, -- 사용자 상태(0: 휴면, 1: 탈퇴)
+	CONSTRAINT users_inactive_pk PRIMARY KEY (idx)
+);
+COMMENT ON TABLE users_inactive IS '비활성 사용자 정보';
+
+-- Column comments
+
+COMMENT ON COLUMN users_inactive.idx IS '사용자 고유 번호';
+COMMENT ON COLUMN users_inactive.pw IS '패스워드';
+COMMENT ON COLUMN users_inactive.membership IS '멤버쉽 구분(티어1, 티어2 등)';
+COMMENT ON COLUMN users_inactive.last_update IS '마지막 접속 시점';
+COMMENT ON COLUMN users_inactive.created_at IS '가입 시점';
+COMMENT ON COLUMN users_inactive.user_state IS '사용자 상태(0: 휴면, 1: 탈퇴)';
