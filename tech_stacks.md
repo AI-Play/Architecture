@@ -1,10 +1,12 @@
 # Project Tech Stacks
 
 <범례>
+
 - **강조** : 사용 예정
 - _기울임_ : 미정 | 검토 필요
 
 ## Front - 경호
+
 - Stack :
   - Framework : **React** + TailwindCSS
     - UI 컴포넌트 방식 -> Single Page Application 구현 가능
@@ -16,7 +18,8 @@
 
 ## Back
 
-### ML Funcs - 경희, 경호, 민석(DevOps)
+### ML Funcs - 경희, 경호, 민석
+
 - Stack :
   - Framework : **FastAPI**
     - ML 관련 기능 지원을 위해 Python 기반이어야 함
@@ -26,14 +29,16 @@
   - Deploy : _PaaS_ with Docker & K8s -> AWS Lambda (+ Step Functions)
     - 수많은 EDA, 전처리 기능을 분산시켜 서버 과부하 방지
 
-### ML Training - 경희, 경호, 민석(DevOps)
+### ML Training - 경희, 경호
+
 - Stack :
   - Framework : **FastAPI**
     - (ML Funcs와 동일한 이유)
   - Library : Modin(|Dask) + Scikit-learn, _joblib(|pickle)_
   - Deploy : _PaaS_ with Docker & K8s -> AWS Fargate + AWS ECS(|EKS) ( | containers with K8s in AWS EC2)
 
-### User Auth - 경호
+### User Auth - 민석, 경호
+
 - Stack :
   - Framework : _DJango_
     - 회원가입, 로그인 등의 기능부터 사용자의 결제 관련 기능까지 취급할 것이므로 보안이 중요
@@ -42,6 +47,7 @@
     - 사용자 인증 관련 기능을 위해 서버가 반드시 계속해서 가동할 필요는 없다고 판단하였으므로 Lambda 사용 예정
 
 ### User Project Managing - 경호
+
 - Stack :
   - Framework : **Fastify**
     - 사용자의 머신 러닝 프로젝트 구조가 변경될 때마다 변경 사항을 자동으로 저장할 예정
@@ -52,23 +58,27 @@
   - Deploy : _PaaS_ -> AWS Lambda (+Step Functions) ( | AWS EC2)
 
 ### Chatting - 경희
-- Stack : 
+
+- Stack :
   - Language : **Go**
     - ---(근거 작성 필요)---
   - Deploy : AWS EC2 -> _PaaS_
 
 ## Database & Storage
 
-### SQL 
-- stack 
+### SQL - 민석, 경호
+
+- stack
   - DB : **PostgreSQL**
     - 오픈 소스이므로 상업적 용도 사용에도 비용 발생 없음
     - Cloud DB로 ElephantSQL 존재 with Free Plan
     - [Popularity 기준 DB 엔진 순위 4위(2022.2 기준)](https://db-engines.com/en/ranking) -> 다수의 참고 자료 존재
   - Service : ElephantSQL (-> AWS RDS)
 
-### NoSQL
+### NoSQL - 경호
+
 - Stack
+
   - DB : **MongoDB**
     - SSPL 라이센스 범위 내에서 문제 없이 사용 가능
       - MongoDB의 소스 코드를 변경하는 경우, 해당 소스 코드를 의무적으로 공개해야 함
@@ -79,6 +89,7 @@
 - Storage : **AWS S3** | Google Cloud Storage
 
 ## etc.
+
 - CI/CD : Github Actions
 - Documentation : Swagger
 - Monitoring : (Prometheus & Grafana) | (Elasticsearch & Kibana)
