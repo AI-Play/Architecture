@@ -39,6 +39,7 @@ CREATE TABLE func_log (
 	user_idx INTEGER NOT NULL, -- 사용자 고유번호
 	func_code VARCHAR(255) NOT NULL, -- 함수 기능 코드
 	is_worked bool NOT NULL, -- 정상 작동 여부
+	error_msg TEXT NOT NULL DEFAULT '', -- Unexpected Error일 경우 저장되는 에러 메시지
 	start_time TIMESTAMP NOT NULL, -- 작동 시작 시각
 	end_time TIMESTAMP NOT NULL, -- 작동 종료 시각
 	created_time TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW() -- 생성 시점
@@ -50,6 +51,7 @@ COMMENT ON TABLE func_log IS '사용자 서비스 이용시간 + 기능별 사�
 COMMENT ON COLUMN func_log.user_idx IS '사용자 고유번호';
 COMMENT ON COLUMN func_log.func_code IS '함수 기능 코드';
 COMMENT ON COLUMN func_log.is_worked IS '정상 작동 여부';
+COMMENT ON COLUMN func_log.error_msg IS 'Unexpected Error(is_worked=2)일 경우 저장되는 에러 메시지';
 COMMENT ON COLUMN func_log.start_time IS '작동 시작 시각';
 COMMENT ON COLUMN func_log.end_time IS '작동 종료 시각';
 COMMENT ON COLUMN func_log.created_time IS '생성 시점';
