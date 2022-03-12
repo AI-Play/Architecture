@@ -12,7 +12,7 @@ CREATE TABLE users(
 	email VARCHAR(255) NOT NULL,
 	pw VARCHAR(255) NOT NULL, -- 패스워드
 	nickname VARCHAR(255) NOT NULL,
-	profile_pic VARCHAR(255) NOT NULL -- 프로필 사진 S3 URL
+	profile_pic VARCHAR(255) NOT NULL DEFAULT '' -- 프로필 사진 S3 URL
 	membership INTEGER NOT NULL DEFAULT 0, -- 멤버쉽 구분(티어1, 티어2 등)
 	last_update TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 마지막 접속 시점
 	created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 가입 시점
@@ -104,6 +104,7 @@ CREATE TABLE ml_model (
 	idx serial NOT NULL, -- 모델 고유 번호
 	user_idx INTEGER NOT NULL, -- 사용자 고유 번호
 	model_name VARCHAR(255) NOT NULL, -- 모델명
+	model_url VARCHAR(255) NOT NULL DEFAULT '', -- 모델 S3 URL
 	last_update TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 마지막 수정 시점
 	created_time TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- 생성 시점
 	CONSTRAINT ml_model_pk PRIMARY KEY (idx)
