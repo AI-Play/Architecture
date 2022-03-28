@@ -176,7 +176,7 @@ CREATE FUNCTION delete_old_mail_confirm() RETURNS trigger
     LANGUAGE plpgsql
     AS $trigger_delete_old_mail_confirm$
 BEGIN
-  DELETE FROM mail_confirm WHERE timestamp < CURRENT_TIMESTAMP - INTERVAL '5 minutes';
+  DELETE FROM mail_confirm WHERE last_update < CURRENT_TIMESTAMP - INTERVAL '5 minutes';
   RETURN NULL;
 END;
 $trigger_delete_old_mail_confirm$;
