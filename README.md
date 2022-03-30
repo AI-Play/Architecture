@@ -22,3 +22,7 @@ A simple introduce of our project architecture
 ## 프로젝트 전체 구조도
 
 ![Project Structure - Phase 1](https://user-images.githubusercontent.com/73585246/160838604-63f68dd7-a0b8-4819-a829-b780f9717766.png)
+
+## 프로젝트 시연 영상
+
+[![Project AI Play Presentation](https://user-images.githubusercontent.com/73585246/160865398-ac8239ef-8913-4d12-81f2-77701386e183.PNG)](https://youtu.be/eAUlGmGqqqc)
