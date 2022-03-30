@@ -23,6 +23,6 @@ A simple introduce of our project architecture
 
 ![Project Structure - Phase 1](https://user-images.githubusercontent.com/73585246/160838604-63f68dd7-a0b8-4819-a829-b780f9717766.png)
 
-## 프로젝트 시연 영상
+## 프로젝트 시연 영상 (클릭 시 이동)
 
 [![Project AI Play Presentation](https://user-images.githubusercontent.com/73585246/160865398-ac8239ef-8913-4d12-81f2-77701386e183.PNG)](https://youtu.be/eAUlGmGqqqc)
