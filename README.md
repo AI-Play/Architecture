@@ -1,6 +1,6 @@
 # AI-Play Architecture
 
-A simple introduce of our project architecture (temporary)
+A simple introduce of our project architecture
 
 ![Architecture Overview](https://user-images.githubusercontent.com/73585246/152648288-f4d44660-86f2-4e24-8b6d-76ea7c31d76f.png)
 
