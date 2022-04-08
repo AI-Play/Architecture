@@ -18,8 +18,8 @@
 - 머신 러닝을 잘 알지 못해도 머신 러닝 모델을 만들 수 있게 해주는 웹 어플리케이션 서비스
 - GUI 방식(마우스 클릭 + 간단한 값 입력)만으로 머신 러닝 과정(EDA, Feature Engineering, Training, ...) 수행 가능
 
-### 프로젝트 결과물 저장소
-| 분류 | 기술 목록 |
+### 프로젝트 기능별 결과물 저장소
+| 기능 | 저장소 주소 |
 | --- | --- |
 | 웹 앱 UI | https://github.com/AI-Play/Front-Web |
 | EDA 및 데이터 전처리 기능 API | https://github.com/AI-Play/ML-Funcs |
