@@ -11,7 +11,7 @@
 - 딥 러닝은 자연어 처리(NLP) 또는 컴퓨터 비전(CV)에 속하는 모델 몇 가지를 API 방식으로 연결하여 입력값만 넣으면 간단히 결과를 얻을 수 있는 기능 제공
   - 단순한 인풋-아웃풋보다는 모델을 체험하는 것에 흥미를 가질 수 있도록 하는 것이 목적
   - ex1. 얼굴 사진 업로드 - (Object Detection) - 닮은 과일 찾기
-  - ex2. "나는 오늘 배가 고프다. 그래서" 문장 입력 - (Text Generation) - "나는 오늘 배가 고프다. 그래서 엘레강트하게 치킨을 먹어봐요 우리"
+  - ex2. "나는 오늘 배가 고프다. 그래서" 문장 입력 - (Text Generation) - "나는 오늘 배가 고프다. 그래서 엘레강트하게 치킨을 먹어요"
 
 ### 주요 서비스 : MalLang MalLang(말랑말랑)
 
@@ -34,7 +34,7 @@
 
 ## 2️⃣ 제작 기간 & 참여 인원
 - 2022.02.14 - 2022.03.28
-- 팀 프로젝트 : 4명
+- 팀 프로젝트 : 3명
 - 팀 구성원
 <details>
   <summary><a href="https://github.com/seahahn">안경호</a></summary>
@@ -71,7 +71,7 @@
 | 분류 | 기술 목록 |
 | --- | --- |
 | Frontend | React.js 17.0.2, TailwindCSS 3.0.22 |
-| Backend | FastAPI 0.75.0, DJango 4.0.3, Fastify 3.27.2, Python 3.8.10, Go 1.17 |
+| Backend | FastAPI 0.75.0, Django 4.0.3, Fastify 3.27.2, Python 3.8.10, Go 1.17 |
 | Database | PostgreSQL(ElephantSQL), MongoDB(MongoDB Atlas) 5.0.6 |
 | DevOps | AWS (S3, Lambda), GCP (App Engine, Cloud Build), Heroku, Vercel |
 | Data Science | Pandas 1.4.1, Scikit-Learn 1.0.2, Bokeh 2.4.2 |
