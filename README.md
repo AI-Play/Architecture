@@ -66,6 +66,8 @@
 
 ## 3️⃣ 사용 기술
 
+- 기술 선택 이유 : https://github.com/AI-Play/Architecture/blob/main/tech_stacks.md
+
 | 분류 | 기술 목록 |
 | --- | --- |
 | Frontend | React.js 17.0.2, TailwindCSS 3.0.22 |
