@@ -28,7 +28,7 @@
     - ML 관련 기능 지원을 위해 Python 기반이어야 함
     - [Web Framework Benchmark](https://www.techempower.com/benchmarks/#section=data-r20&hw=ph&test=composite&l=zijzen-sf)에서 Flask, DJango보다 우수한 성능
     - 공식 문서 등의 참고 자료가 충분히 존재함
-  - Library : Modin(|Dask) + Bokeh + Scikit-learn + etc.
+  - Library : Pandas ~~Modin(|Dask)~~ + Bokeh + Scikit-learn + etc.
   - Deploy : **PaaS - Heroku** ~~with Docker & K8s~~ -> **AWS Lambda** ~~(+ Step Functions)~~
     - 수많은 EDA, 전처리 기능을 분산시켜 서버 과부하 방지
 
