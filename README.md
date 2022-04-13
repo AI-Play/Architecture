@@ -45,21 +45,26 @@
     - Github Issues와 Project Kanban Board를 이용한 팀의 일정 및 할 일 관리 주도
     - 팀 구성원이 올린 Github Pull Request의 Code Review 수행
     - 프로젝트 내용 문서화
-- 프론트앤드(웹 앱 UI 및 기능) 전체 개발
-- 백앤드 개발
-    - 사용자 계정 관련 기능(회원가입, 로그인 등) 서버 구현 및 리팩토링
-    - 사용자의 머신 러닝 프로젝트 관리 서버 구현 및 배포
-    - 딥 러닝 체험을 위한 기능 API 서버 구현 및 배포
+  - 프론트앤드(웹 앱 UI 및 기능) 전체 개발
+  - 백앤드 개발
+    - 사용자 계정 관련 API(회원가입, 로그인 등) 서버 구현 및 리팩토링
+    - 사용자의 머신 러닝 프로젝트 관리 API 서버 구현 및 배포
+    - 딥 러닝 체험용 모델 API 서버 구현 및 배포
 </details>
 <details>
   <summary><a href="https://github.com/KayyoungHL">이경희</a></summary>
   
-  - 준비중
+  - 머신 러닝 기능 관련 API 개발 담당
+  - 머신 러닝 API 서버(ML-Funcs, ML-Train) 전체 구현
+  - 채팅 서버 구현
 </details>
 <details>
   <summary><a href="https://github.com/Library-of-jade">김민석</a></summary>
 
-  - 준비중
+  - 데이터 시각화 기능 구현
+  - 사용자 계정 관련 API(회원가입, 로그인 등) 서버 구현
+  - 머신 러닝 및 사용자 계정 관련 API 서버 배포
+  - 데이터베이스 모델 설계 및 구현
 </details>
 
 <br/>
