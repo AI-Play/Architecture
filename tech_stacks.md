@@ -28,8 +28,8 @@
     - ML 관련 기능 지원을 위해 Python 기반이어야 함
     - [Web Framework Benchmark](https://www.techempower.com/benchmarks/#section=data-r20&hw=ph&test=composite&l=zijzen-sf)에서 Flask, DJango보다 우수한 성능
     - 공식 문서 등의 참고 자료가 충분히 존재함
-  - Library : Pandas ~~Modin(|Dask)~~ + Bokeh + Scikit-learn + etc.
-  - Deploy : **PaaS - Heroku** ~~with Docker & K8s~~ -> **AWS Lambda** ~~(+ Step Functions)~~
+  - Library : Pandas + Bokeh + Scikit-learn + etc.
+  - Deploy : **PaaS - Heroku** -> **AWS Lambda**
     - 수많은 EDA, 전처리 기능을 분산시켜 서버 과부하 방지
 
 ### ML Training - 경희, 경호
@@ -37,8 +37,8 @@
 - Stack :
   - Framework : **FastAPI**
     - (ML Funcs와 동일한 이유)
-  - Library : Pandas ~~Modin(|Dask)~~ + Scikit-learn, joblib(|pickle)
-  - Deploy : **PaaS - Heroku** ~~with Docker & K8s~~ -> **AWS Lambda** ~~AWS Fargate + AWS ECS(|EKS) ( | containers with K8s in AWS EC2)~~
+  - Library : Pandas + Scikit-learn, joblib(|pickle)
+  - Deploy : **PaaS - Heroku** -> **AWS Lambda**
 
 ### User Auth - 민석, 경호
 
@@ -46,7 +46,7 @@
   - Framework : **Django**
     - 회원가입, 로그인 등의 기능부터 사용자의 결제 관련 기능까지 취급할 것이므로 보안이 중요
     - 따라서 데이터를 주고 받는 등의 성능보다는 얼마나 안정적이고 보안 관련 기능이 지원되는지가 중요
-  - Deploy : **PaaS - Heroku** ~~-> AWS Lambda (+Step Functions) ( | AWS EC2)~~
+  - Deploy : **PaaS - Heroku**
 
 ### User Project Managing - 경호
 
@@ -57,14 +57,14 @@
     - 상당히 빈번하게 요청이 발생할 것이므로 처리 속도가 중요
     - [Web Framework Benchmark](https://www.techempower.com/benchmarks/#section=data-r20&hw=cl&test=json&l=zijybj-sf&d=e)의 JSON 직렬화에서 두 번째로 성능이 높음
       - 비교 언어는 Java, JavaScript, Python, PHP, DB는 MongoDB 기준으로 필터링한 결과
-  - Deploy : **PaaS - Vercel** ~~-> AWS Lambda (+Step Functions) ( | AWS EC2)~~
+  - Deploy : **PaaS - Vercel**
 
 ### Chatting - 경희
 
 - Stack :
   - Language : **Go**
     - ---(근거 작성 필요)---
-  - Deploy : AWS EC2 -> **PaaS - Heroku**
+  - Deploy : **PaaS - Heroku**
 
 <br/>
 
@@ -77,7 +77,7 @@
     - 오픈 소스이므로 상업적 용도 사용에도 비용 발생 없음
     - Cloud DB로 ElephantSQL 존재 with Free Plan
     - [Popularity 기준 DB 엔진 순위 4위(2022.2 기준)](https://db-engines.com/en/ranking) -> 다수의 참고 자료 존재
-  - Service : **ElephantSQL** ~~(-> AWS RDS)~~
+  - Service : **ElephantSQL**
 
 ### NoSQL - 경호
 
@@ -90,7 +90,7 @@
     - [Popularity 기준 DB 엔진 순위 5위(2022.2 기준)](https://db-engines.com/en/ranking) -> 다수의 참고 자료 존재
   - Service : **MongoDB Atlas**
 
-- Storage : **AWS S3** ~~| Google Cloud Storage~~
+- Storage : **AWS S3**
 
 <br/>
 
