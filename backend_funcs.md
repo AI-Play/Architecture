@@ -1,42 +1,46 @@
 # Backend Functions
 
-## Project Phase 1(MLML)에서 구현할 백앤드 기능 목록
+## Backend Functions to Implement in Project Phase 1 (MLML)
 
-순서와 중요도는 상관 없습니다.
+The order and priority are not important.
 
-확인 후 추가해야 할 기능이 있다면 repository의 issue에 남겨주세요.
-형식 : 파트 - 대분류 번호 - 추가할 기능
-ex. backend - 1 - 사용자 탈퇴
+If there are additional features to be added after verification, please leave a note in the repository's issue.
+Format: Part - Major Category Number - Additional Feature
+e.g., backend - 1 - User Withdrawal
 
-기능 구현의 난이도 혹은 비용이 높은 경우 Phase 2(AI Play)에서 구현하기
+If the implementation difficulty or cost is high, consider implementing it in Phase 2 (AI Play).
 
-### 1. User (사용자)
-(Phase 2에서 구현)
+### 1. User
 
-### 2. Admin (관리자)
-- 서비스 기능 정상 작동 여부 확인(success / fail logging)
+(To be implemented in Phase 2)
 
-### 3. etc. (그 외)
-- 서비스 기능 작동 횟수 세기(logging)
+### 2. Admin
 
+- Check the normal operation of service functions (success/fail logging)
 
+### 3. etc.
 
-## Project Phase 2(AI Play)에서 구현할 백앤드 기능 목록
+- Count the number of times service functions are executed (logging)
 
-### 1. User (사용자)
-- 회원가입
-- 로그인 / 로그아웃
-- 비밀번호 찾기
-- SNS 로그인
-- 기존 가입 여부 확인
-- 사용자 탈퇴
-- 사용자 소유의 Machine Learning Project 관리
-- 구독형 멤버십 등급별 기능 분리(저장 모델 수, 모델 크기, 업로드 가능 파일 크기)
+## Backend Functions to Implement in Project Phase 2 (AI Play)
 
-### 2. Admin (관리자)
-- 사용자 목록 조회 및 관리
-- 서버 리소스 사용량 확인
+### 1. User
 
-### 3. etc. (그 외)
-- 사용자 세션 관리(로그인 상태 지속)
-- HTTPS, 도메인 설정
+- Sign up
+- Sign in / Sign out
+- Find password
+- SNS login
+- Check existing membership
+- User withdrawal
+- Manage Machine Learning Projects owned by users
+- Separate functions by subscription membership level (number of saved models, model size, uploadable file size)
+
+### 2. Admin
+
+- View and manage user lists
+- Check server resource usage
+
+### 3. etc.
+
+- User session management (maintaining login status)
+- HTTPS, domain configuration

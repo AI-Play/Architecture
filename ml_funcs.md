@@ -1,67 +1,73 @@
 # Machine Learning Functions
 
-**!!! 머신 러닝 기능은 최종적으로 AWS Lambda(or else)를 이용해 Serverless로 제공하는 것이 목표 !!!**
+**!!! The ultimate goal is to provide Machine Learning functions as a Serverless service using AWS Lambda (or else) !!!**
 
-## Project Phase 1(MLML)에서 구현할 머신 러닝 관련 기능 목록
+## List of Machine Learning-related Functions to Implement in Project Phase 1 (MLML)
 
-순서와 중요도는 상관 없습니다.
+The order and importance are not relevant.
 
-확인 후 추가해야 할 기능이 있다면 repository의 issue에 남겨주세요.
-형식 : 파트 이름 - 대분류 번호 - 추가할 기능
-ex. ml - 1 - 행 열 자리 바꾸기(transpose)
+If there are additional features to be added after confirmation, please leave them in the repository's issue.
+Format: Part Name - Major Category Number - Feature to Add
+e.g., ml - 1 - Transpose Rows and Columns
 
-※ 기능 구현의 난이도 혹은 비용이 높은 경우 Phase 2(AI Play)에서 구현하기
+※ If the difficulty or cost of implementing a feature is high, implement it in Phase 2 (AI Play).
 
-### 1. EDA (데이터 탐색)
-- 데이터셋 업로드(csv, xlsx, ...) **-> maybe in Frontend**
-- 데이터프레임 만들기(read_csv, ...) **-> maybe in Frontend**
-- 데이터 조회(head, tail, ...) **-> maybe in Frontend**
-- 형태 확인(shape) **-> maybe in Frontend**
-- 데이터 타입 확인(dtypes)
-- 데이터 분포 확인(describe) **-> maybe in Frontend**
-- 컬럼 목록 조회(columns)
-- 컬럼 내 고유값 조회(unique)
-- 결측치 확인(isna)
-- 이상치 확인
-- 상관 관계 확인(corr())
-- 데이터 그룹핑(groupby)
-- 행 열 자리 바꾸기(transpose)
+### 1. Exploratory Data Analysis (EDA)
 
-### 2. Feature Engineering (특성 공학)
-- 특정 데이터만 가져오기(loc, iloc, 슬라이싱, 조건문, ...)
-- 행 or 열 제거(drop)
-- 결측치 제거(dropna)
-- 이상치 제거
-- 컬럼 추가
-- 컬럼명 변경(rename, ...)
-- 데이터프레임 정렬(sort_values)
-- 데이터프레임 합치기(concat, merge)
+- Upload dataset (csv, xlsx, ...) **-> maybe in Frontend**
+- Create DataFrame (read_csv, ...) **-> maybe in Frontend**
+- Data retrieval (head, tail, ...) **-> maybe in Frontend**
+- Shape confirmation (shape) **-> maybe in Frontend**
+- Check data types (dtypes)
+- Check data distribution (describe) **-> maybe in Frontend**
+- List columns (columns)
+- Retrieve unique values in columns (unique)
+- Check for missing values (isna)
+- Identify outliers
+- Confirm correlation (corr())
+- Group data (groupby)
+- Transpose rows and columns
 
-### 3. Visualization (시각화)
+### 2. Feature Engineering
+
+- Retrieve specific data (loc, iloc, slicing, conditional statements, ...)
+- Remove rows or columns (drop)
+- Remove missing values (dropna)
+- Remove outliers
+- Add columns
+- Change column names (rename, ...)
+- Sort DataFrame (sort_values)
+- Merge DataFrames (concat, merge)
+
+### 3. Visualization
+
 - boxplot
 - histplot
 - countplot
 - scatterplot
 - barplot
 
-### 4. Machine Learning Model Making (머신 러닝 모델 만들기)
-- 특성 / 타겟 분리하기
-- 훈련 / 검증 / 테스트 데이터셋 나누기(train_test_split)
-- 인코더 : One-hot, Target, Ordinal, ...
-- 타겟 클래스 비중 계산(class weight)
+### 4. Machine Learning Model Making
 
-- 회귀 : Linear, Ridge, Decision Tree, Random Forest, Boosting, ...
-- 분류 : Logistic, Decision Tree, Random Forest, Boosting, ...
-- 튜닝 : Grid, Randomized, ...
-- 평가지표
-  - 회귀 : Accuracy, MSE, MAE, R Squared, ...
-  - 분류 : Accuracy, Precision, Recall, F1 Score, AUC Score, ROC Curve, ...
+- Separate features/targets
+- Split into training/validation/test datasets (train_test_split)
+- Encoders: One-hot, Target, Ordinal, ...
+- Calculate class weights
 
-### 5. Model Interpretation (모델 해석)
-- 특성 중요도 / 순열 중요도
-- PDP
-- SHAP
+- Regression: Linear, Ridge, Decision Tree, Random Forest, Boosting, ...
+- Classification: Logistic, Decision Tree, Random Forest, Boosting, ...
+- Tuning: Grid, Randomized, ...
+- Evaluation metrics
+  - Regression: Accuracy, MSE, MAE, R Squared, ...
+  - Classification: Accuracy, Precision, Recall, F1 Score, AUC Score, ROC Curve, ...
 
-### 6. Model Saving & Loading (모델 저장 & 불러오기)
-- 모델 저장하기
-- 모델 불러오기
+### 5. Model Interpretation
+
+- Feature importance / Permutation importance
+- PDP (Partial Dependence Plot)
+- SHAP (SHapley Additive exPlanations)
+
+### 6. Model Saving & Loading
+
+- Save the model
+- Load the model
